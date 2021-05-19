@@ -1,6 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  p
+  body(onload=`typeWriter("${title}", 0)`)
+  .row
+    .col-1
+    .pt-5.pb-5.rounded.col-10
+      h1.pl-5.font-warText
+      p.text-center.font-warText
+    .col-1
+
+  
+

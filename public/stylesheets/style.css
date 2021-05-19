@@ -1,8 +1,54 @@
-body {
-  padding: 50px;
+body {  
+  /* min-height: 100vh; */
+  /* background: rgb(255,255,255); */
+  /* background: linear-gradient(180deg, rgba(255,255,255,1) 98%, rgb(112, 112, 112) 100%) ; */
+  background-color: #000000;
+  padding-top: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+@font-face {
+  font-family: 'WarText';
+  src: url( '../fonts/WarText.woff2') format('woff2'),
+      url('../fonts/WarText.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 50px;
+}
 a {
-  color: #00B7FF;
+  color: #1a6380;
+}
+
+.font-warText {
+  font-family:'WarText';
+  color: #119cdd;
+  text-shadow: 1px 1px 40px #119cdd, 1px 1px 50px #388cd1, 1px 1px 60px #2d6491;
+}
+
+.font-silver {
+  color: #ffffff;
+  text-shadow: 4px 4px 12px #d1d1d1;
+}
+
+.glow {
+  /* font-size: 80px; */
+  /* color: #fff; */
+  text-align: center;
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    /* text-shadow: 0 0 4px #fff, 0 0 12px #1a6380, 0 0 22px #1a6380, 0 0 33px #1a6380, 0 0 45px #1a6380, 0 0 55px #1a6380, 0 0 55px #1a6380; */
+    text-shadow: 0 0 10px #fff, 0 0 20px #119cdd, 0 0 30px #119cdd, 0 0 40px #119cdd, 0 0 50px #119cdd, 0 0 60px #119cdd, 0 0 70px #119cdd;
+  }
+  
+  to {
+    text-shadow: 0 0 13px #fff, 0 0 23px #1a6c80, 0 0 33px #1a6380, 0 0 47px #1a6380, 0 0 57px #1a6380, 0 0 67px #1a6380, 0 0 37px #1a6380;
+  }
 }
